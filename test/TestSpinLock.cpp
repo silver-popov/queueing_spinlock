@@ -1,9 +1,10 @@
-#include "../Source/SpinLock.h"
-#include "gtest/gtest.h"
+#include <queueing_spinlock/SpinLock.h>
+#include <gtest/gtest.h>
 #include <thread>
 #include <list>
 
-using namespace ::std;
+using namespace std;
+using namespace queueing_spinlock;
 
 namespace TestSpinLock {
 

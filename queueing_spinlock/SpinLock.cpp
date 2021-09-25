@@ -10,7 +10,6 @@ namespace queueing_spinlock {
 
 using namespace std;
 
-inline
 void SpinLock::acquire (SpinLockNode& node) noexcept
 {
 	node.sn_next_ = nullptr;
@@ -24,7 +23,6 @@ void SpinLock::acquire (SpinLockNode& node) noexcept
 	}
 }
 
-inline
 void SpinLock::release (SpinLockNode& node) noexcept
 {
 	if (!node.sn_next_) {

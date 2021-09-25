@@ -7,3 +7,4 @@ project ("queueing_spinlock")
 
 # Include sub-projects.
 add_subdirectory ("queueing_spinlock")
+add_subdirectory ("test")

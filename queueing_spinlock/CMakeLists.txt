@@ -6,6 +6,6 @@ cmake_minimum_required (VERSION 3.8)
 project ("queueing_spinlock")
 
 # Add source to this project's executable.
-add_library (queueing_spinlock "SpinLock.cpp")
+add_library ("queueing_spinlock" STATIC "SpinLock.cpp")
 
 # TODO: Add tests and install targets if needed.
